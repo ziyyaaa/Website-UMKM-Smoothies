@@ -1,10 +1,7 @@
-// SCRIPT SEDERHANA UNTUK WEBSITE
-
 // 1. Auto Active Navbar
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Website Smoothi:p Siap!');
-    
-    // Cari link yang aktif berdasarkan URL
+
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -37,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 4. Update Instagram link
+    // 4. Instagram link
     const igLinks = document.querySelectorAll('a[href*="instagram"]');
     igLinks.forEach(link => {
         link.href = 'https://www.instagram.com/smoothie.p_25?igsh=MWM0d2ZucHU4a3B3cQ==';
@@ -87,7 +84,6 @@ function tampilkanTestimoni() {
     container.innerHTML = html;
 }
 
-// Jalankan saat halaman dimuat
 if (document.getElementById('testimoni-container')) {
     tampilkanTestimoni();
 }
