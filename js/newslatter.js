@@ -10,7 +10,7 @@ cards.forEach((card) => {
 
     // Saat gambar diklik → tampilkan nama produk dengan animasi
     img.addEventListener("click", () => {
-        // Animation effect
+        // Animasi effect
         text.style.transform = 'scale(0.9)';
         text.style.opacity = '0.5';
         
@@ -18,8 +18,7 @@ cards.forEach((card) => {
             text.textContent = productName;
             text.style.transform = 'scale(1)';
             text.style.opacity = '1';
-            
-            // Show temporary notification
+
             showImageNotification(`Melihat: ${img.alt}`);
         }, 300);
     });
@@ -29,7 +28,7 @@ cards.forEach((card) => {
         // ES6 #4: classList add dengan timeout
         card.classList.add("hover-aktif");
         
-        // Add glow effect
+        // Menambakan glow effect
         card.style.boxShadow = '0 15px 35px rgba(33, 150, 243, 0.3)';
         img.style.transform = 'scale(1.05)';
         img.style.transition = 'transform 0.5s ease';
@@ -39,12 +38,11 @@ cards.forEach((card) => {
         // ES6 #5: classList remove
         card.classList.remove("hover-aktif");
         
-        // Remove glow effect
+        // Menghapus glow effect
         card.style.boxShadow = '';
         img.style.transform = 'scale(1)';
     });
 
-    // Add double click for favorite
     let clickCount = 0;
     img.addEventListener('dblclick', () => {
         card.classList.toggle('favorited');
@@ -86,7 +84,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Notification function for gallery
+// Notifikasi function galeri
 function showImageNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'image-notification';
@@ -112,7 +110,7 @@ function showImageNotification(message) {
     }, 2000);
 }
 
-// Add notification animations
+// Menambahkan notifikasi animasi
 const notificationStyle = document.createElement('style');
 notificationStyle.textContent = `
     @keyframes slideUp {
