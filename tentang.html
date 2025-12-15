@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Smoothi:p</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* STYLE KHUSUS UNTUK HALAMAN TENTANG */
+        .about-hero {
+            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            padding: 80px 0;
+            color: white;
+        }
+        
+        /* FOTO BIASA - PALING SIMPLE */
+        .foto-tentang {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .mission-card {
+            border-top: 4px solid #1e88e5;
+        }
+        
+        .value-icon {
+            font-size: 2rem;
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+        
+        /* Untuk produk unggulan */
+        .product-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(33, 150, 243, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .product-icon i {
+            font-size: 1.8rem;
+            color: #2196f3;
+        }
+        
+        /* Menghilangkan icon pada bagian Misi */
+        .mission-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .mission-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+        
+        .mission-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+        }
+        
+        /* Menghilangkan icon pada bagian Visi */
+        .vision-icon-removed {
+            display: none;
+        }
+        
+        /* Menghilangkan icon pada bagian Produk Unggulan */
+        .product-icon-removed {
+            display: none;
+        }
+        
+        /* Style untuk Perjalanan Kami yang sederhana */
+        .journey-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .journey-list li {
+            margin-bottom: 2rem;
+            padding-left: 0;
+        }
+        
+        .journey-year {
+            font-weight: bold;
+            color: #1e88e5;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .journey-description {
+            color: #6c757d;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.jpeg" alt="Smoothi:p Logo" width="40" height="40" class="rounded-circle me-2">
+                <span class="fw-bold text-primary">Smoothi:p</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="about-hero text-white">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Tentang Smoothi:p</h1>
+            <p class="lead mb-0">Segarnya buah alami, nikmatnya hidup sehat</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Company Story -->
+        <section class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold text-primary mb-4">Cerita Kami</h2>
+                <p>
+                    Smoothi:p berdiri sejak 2023 dengan satu misi sederhana: 
+                    menghadirkan smoothies sehat dan enak untuk masyarakat Indonesia.
+                </p>
+                <p>
+                    Bermula dari kecintaan terhadap buah-buahan segar dan kepedulian 
+                    terhadap gaya hidup sehat, kami memulai perjalanan dengan 
+                    mengolah buah pilihan menjadi smoothies yang menyegarkan.
+                </p>
+                <p>
+                    Kini, Smoothi:p telah berkembang menjadi UMKM yang dipercaya 
+                    oleh ratusan pelanggan setia yang mengutamakan kesehatan 
+                    tanpa mengorbankan kenikmatan rasa.
+                </p>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <!-- FOTO BIASA SAJA -->
+                <img src="images/storberi.jpg" alt="Buah-buahan Segar" 
+                     class="foto-tentang">
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card mission-card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Icon dihapus -->
+                        <h3 class="card-title fw-bold mb-3 text-primary">Misi Kami</h3>
+                        <ul class="mission-list">
+                            <li class="mb-2">Menyediakan smoothies sehat dan bergizi</li>
+                            <li class="mb-2">Menggunakan bahan alami tanpa pengawet</li>
+                            <li class="mb-2">Mendukung petani lokal</li>
+                            <li>Mempromosikan gaya hidup sehat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mission-card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <!-- Icon dihapus -->
+                        <h3 class="card-title fw-bold mb-3 text-primary">Visi Kami</h3>
+                        <p class="card-text">
+                            Menjadi merek smoothies terdepan di Indonesia yang 
+                            dikenal karena kualitas, kesehatan, dan kesegarannya, 
+                            serta berkontribusi dalam meningkatkan kesadaran 
+                            masyarakat akan pentingnya konsumsi buah-buahan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="mb-5">
+            <h2 class="fw-bold text-center text-primary mb-4">Produk Unggulan</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <!-- Icon dihapus -->
+                            <h4 class="card-title mb-3 text-primary">Mango Smoothies</h4>
+                            <p class="card-text text-muted">
+                                Rasa mangga manis dengan tekstur lembut dan creamy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <!-- Icon dihapus -->
+                            <h4 class="card-title mb-3 text-primary">Banana Smoothies</h4>
+                            <p class="card-text text-muted">
+                                Smoothies pisang yang kaya potasium dan energi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <!-- Icon dihapus -->
+                            <h4 class="card-title mb-3 text-primary">Dragon Fruit Smoothies</h4>
+                            <p class="card-text text-muted">
+                                Smoothies buah naga yang kaya antioksidan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="text-center py-5 bg-light rounded-3">
+            <h3 class="fw-bold mb-3 text-primary">Bergabunglah dengan Komunitas Smoothi:p</h3>
+            <p class="lead mb-4">Ikuti kami di media sosial untuk info terbaru dan promo menarik!</p>
+            <a href="https://www.instagram.com/smoothie.p_25?igsh=MWM0d2ZucHU4a3B3cQ==" target="_blank" 
+               class="btn btn-primary btn-lg">
+                <i class="fab fa-instagram me-2"></i> Follow @smoothie.p_25
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <img src="images/logo.jpeg" alt="Logo" width="35" height="35" class="rounded-circle me-2">
+                        <span class="fw-bold">Smoothi:p</span>
+                    </div>
+                    <p class="mt-2 mb-0 text-light opacity-75">
+                        Smoothies sehat untuk hidup lebih baik
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        &copy; 2025 Smoothi:p - Smoothies Terbaik<br>
+                        <small class="opacity-75">Dibuat dengan <i class="fas fa-heart text-danger"></i> untuk pecinta smoothie sehat</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS sederhana -->
+    <script>
+        // Script sederhana untuk set active navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Update semua link Instagram
+            const igLinks = document.querySelectorAll('a[href*="instagram"]');
+            igLinks.forEach(link => {
+                link.href = 'https://www.instagram.com/smoothie.p_25?igsh=MWM0d2ZucHU4a3B3cQ==';
+                link.target = '_blank';
+            });
+        });
+    </script>
+</body>
+</html>
